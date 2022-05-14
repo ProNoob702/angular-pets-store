@@ -1,11 +1,11 @@
 <h2>Pets list</h2>
-
+<button type="button" (click)="addAPet()">Add a pet</button>
 <div *ngFor="let pet of pets">
   <h3>
     <a [title]="pet.name" [routerLink]="['/pet', pet.id]">
       {{ pet.name }}
     </a>
   </h3>
-
   <p *ngIf="pet.status">Status: {{ pet.status }}</p>
+  <button type="button" (click)="removePet(pet.id)">Remove</button>
 </div>
