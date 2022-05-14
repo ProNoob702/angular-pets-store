@@ -8,7 +8,7 @@ import { PetsService } from '../pet.service';
   styleUrls: ['./pets-list.component.scss'],
 })
 export class PetsListComponent implements OnInit {
-  pets = this.petsService.getPets();
+  pets = this.petsService.getPets('available');
 
   constructor(private petsService: PetsService) {}
 

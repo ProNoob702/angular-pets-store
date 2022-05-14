@@ -1,6 +1,6 @@
 <h2>Pets list</h2>
 <button type="button" (click)="addAPet()">Add a pet</button>
-<div *ngFor="let pet of pets">
+<div *ngFor="let pet of pets | async">
   <h3>
     <a [title]="pet.name" [routerLink]="['/pet', pet.id]">
       {{ pet.name }}
