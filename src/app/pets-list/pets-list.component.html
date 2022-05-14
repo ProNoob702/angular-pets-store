@@ -2,6 +2,12 @@
 
 <div *ngFor="let pet of pets">
   <h3>
-    {{ pet.name }}
+    <a [title]="pet.name">
+      {{ pet.name }}
+    </a>
   </h3>
+
+  <p *ngIf="pet.status">Status: {{ pet.status }}</p>
+
+  <app-pet-alert [pet]="pet" (notify)="onNotify()"></app-pet-alert>
 </div>

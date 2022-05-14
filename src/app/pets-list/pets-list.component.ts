@@ -11,4 +11,8 @@ export class PetsListComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+  }
 }
