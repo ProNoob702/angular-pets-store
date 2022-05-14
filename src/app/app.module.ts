@@ -4,10 +4,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PetsListComponent } from './pets-list/pets-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { PetAlertComponent } from './pet-alert/pet-alert.component';
+import { PetDetailComponent } from './pet-detail/pet-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, PetsListComponent, TopBarComponent, PetAlertComponent],
+  declarations: [
+    AppComponent,
+    PetsListComponent,
+    TopBarComponent,
+    PetDetailComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
